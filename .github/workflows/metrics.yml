@@ -29,8 +29,8 @@ jobs:
           plugin_languages_threshold: 2%
       # neutral headings instead of link-blue, then publish to the metrics branch
       - run: |
-          sed -i 's/color:#0366d6/color:#7d8590/' /metrics_renders/metrics.svg
-          cp /metrics_renders/metrics.svg "$RUNNER_TEMP/"
+          sudo sed -i 's/color:#0366d6/color:#7d8590/' /metrics_renders/metrics.svg
+          sudo cp /metrics_renders/metrics.svg "$RUNNER_TEMP/"
           git clone -q --depth 1 -b metrics "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}" out
           cp "$RUNNER_TEMP/metrics.svg" out/
           cd out
