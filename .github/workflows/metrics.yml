@@ -21,10 +21,10 @@ jobs:
           plugin_isocalendar_duration: half-year
           plugin_languages: yes
           # indepth = only languages in your own commits; programming = no HTML/notebooks
+          commits_authoring: YRC99, Yi Rui Cui
           plugin_languages_indepth: yes
           plugin_languages_categories: programming
           plugin_languages_sections: most-used
-          plugin_languages_details: percentage
           plugin_languages_limit: 10
           plugin_languages_threshold: 2%
       # neutral headings instead of link-blue, then publish to the metrics branch
